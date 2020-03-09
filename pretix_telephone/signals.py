@@ -4,7 +4,7 @@ from django import forms
 from django.dispatch import receiver
 from django.template.loader import get_template
 from django.urls import resolve, reverse
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 from i18nfield.strings import LazyI18nString
 from pretix.base.signals import layout_text_variables, register_data_exporters
 from pretix.control.signals import nav_event_settings, order_info

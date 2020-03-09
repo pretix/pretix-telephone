@@ -1,5 +1,5 @@
 from django.apps import AppConfig
-from django.utils.translation import ugettext_lazy
+from django.utils.translation import gettext_lazy
 
 
 class PluginApp(AppConfig):
@@ -7,9 +7,9 @@ class PluginApp(AppConfig):
     verbose_name = 'Pretix Phone Number Field'
 
     class PretixPluginMeta:
-        name = ugettext_lazy('Phone Number Field')
+        name = gettext_lazy('Phone Number Field')
         author = 'Felix Rindt'
-        description = ugettext_lazy('This plugin adds a contact question asking for the telephone number.')
+        description = gettext_lazy('This plugin adds a contact question asking for the telephone number.')
         category = 'FEATURE'
         visible = True
         version = '2.3.0'
